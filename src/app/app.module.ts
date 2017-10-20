@@ -19,9 +19,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    MapModule,
-    AdminModule
+    AppRoutingModule
   ],
   providers: [OAuthServiceService],
   bootstrap: [AppComponent]
