@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {OAuthServiceService} from "../services/o-auth-service.service";
+import {OAuthService} from "../../core/services/o-auth.service";
 
 @Component({
   selector: 'app-header',
@@ -7,9 +7,9 @@ import {OAuthServiceService} from "../services/o-auth-service.service";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  oAuthService: OAuthServiceService;
+  oAuthService: OAuthService;
 
-  constructor(oAuthService: OAuthServiceService) {
+  constructor(oAuthService: OAuthService) {
     this.oAuthService = oAuthService;
   }
 

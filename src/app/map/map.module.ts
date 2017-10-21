@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import {MapComponent} from "./map/map.component";
 import {MapRoutingModule} from "./map-routing.module";
 import {CoreModule} from "../core/core.module";
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   imports: [
     CommonModule,
     MapRoutingModule,
-    CoreModule
+    CoreModule,
+    SharedModule
   ],
   declarations: [MapComponent]
 })

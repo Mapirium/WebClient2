@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class OAuthServiceService {
+export class OAuthService {
 
   constructor() { }
 
