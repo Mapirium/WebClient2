@@ -6,9 +6,8 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {OAuthServiceService} from "./services/o-auth-service.service";
 import { NavbarComponent } from './navbar/navbar.component';
-import {MapModule} from "./map/map.module";
-import {AdminModule} from "./admin/admin.module";
 import { WelcomeComponent } from './welcome/welcome.component';
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +18,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [OAuthServiceService],
   bootstrap: [AppComponent]

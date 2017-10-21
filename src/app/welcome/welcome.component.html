@@ -5,3 +5,7 @@
   <li><a routerLink="/map">Map</a> </li>
   <li><a routerLink="/admin">Admin</a> </li>
 </ul>
+<h3>Karten:</h3>
+<ul>
+  <li *ngFor="let map of maps"><a [routerLink]="['/map', map.name]">{{map.title}}</a></li>
+</ul>
