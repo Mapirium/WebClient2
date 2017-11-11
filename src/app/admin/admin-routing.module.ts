@@ -8,7 +8,7 @@ const advancedRoutes: Routes = [
 
   {path: 'create', component: CreateMapComponent},
   {path: 'manage', component: ManageMapComponent},
-
+  {path: '**', redirectTo: 'create'}, // default route
 ];
 
 @NgModule({
