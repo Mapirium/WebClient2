@@ -19,6 +19,12 @@ export class MapService {
     });
   }
 
+  getMapById(mapId: string): Observable<Map> {
+    return this.http.get(AppSettings.REST_ENDPOINT + "/map/name/" + mapId).map((res: any) => {
+      return this.mapMap(res);
+    })
+  }
+
   mapMap(data: any): Map {
     const result = new Map();
     result.publicId = data.publicId;
